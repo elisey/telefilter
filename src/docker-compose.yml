@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+    telefilter:
+        build:
+            context: ''
+            dockerfile: docker/Dockerfile
+        container_name: telefilter
+        networks:
+            - vpc
+
+networks:
+  vpc:
+    name: telefilter-network
