@@ -5,6 +5,7 @@ services:
             context: ''
             dockerfile: docker/Dockerfile
         container_name: telefilter
+        restart: always
         networks:
             - vpc
 
